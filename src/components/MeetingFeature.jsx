@@ -31,16 +31,13 @@ const MeetingFeature = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    //example = currentSlide =0 and slide length =3
-    //nextIndex = (1+1) % 3
-    // 2 % 3 =2
+   
     const nextIndex = (currentSlide + 1) % slides.length;
     setCurrentSlide(nextIndex);
   };
 
   const prevSlide = () => {
-    // current is 0  lenght =3
-    //prevIndex = (0 -1 +3 )%3=2
+   
     const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
     setCurrentSlide(prevIndex);
   };
